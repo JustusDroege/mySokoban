@@ -43,10 +43,11 @@ public class Level {
 	
 
 	public void drawLevelObjects() {
-		//Auf Basis der Figuren statisch!!!!!!!!!
+		//Auf Basis der Figuren mit Koordinaten
 		for(int i = 0; i < tiles.length; i++){
 	    	for(int j = 0; j< tiles[i].length; j++){
-	    		System.out.print(level[i][j].getSign());
+	    		System.out.print(level[i][j].getPosition().getX()+ "." + level[i][j].getPosition().getY()+"=");
+	    		System.out.print(level[i][j].getSign() + " ");
 	    		if (j == tiles.length-1) {
 	    			System.out.println("");
 	    		}

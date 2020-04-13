@@ -4,9 +4,10 @@ public class Main {
 	
 	public static void main(String[] args) throws IOException{
 		Level lvl1 = new Level("sokoban.txt");
-		System.out.println("Ausgabe des char Arrays:");
+		System.out.println("Ausgabe der Zeichen:");
 		lvl1.drawLevelTiles();
-		System.out.println("Ausgabe der chars der Figuren Objekte:");
+		System.out.println("");
+		System.out.println("Ausgabe der Zeichen mit Koordinaten:");
 		lvl1.drawLevelObjects();
 	}
 
