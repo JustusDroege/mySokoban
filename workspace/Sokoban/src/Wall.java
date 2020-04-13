@@ -1,6 +1,6 @@
 public class Wall extends Figures{
 
-	Wall() {
-		super(null, '#');
+	Wall(Position position) {
+		super(position, '#');
 	}
 }

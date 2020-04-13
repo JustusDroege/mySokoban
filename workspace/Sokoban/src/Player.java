@@ -1,6 +1,7 @@
 public class Player extends Figures {
 
-	Player() {
-		super(null, '@');
+	Player(Position position) {
+		super(position, '@');
 	}
+	
 }

@@ -1,6 +1,7 @@
 public class Field extends Figures {
 
-	Field() {
-		super(null,' ');
+	Field(Position position) {
+		super(position,' ');
 	}
+	
 }

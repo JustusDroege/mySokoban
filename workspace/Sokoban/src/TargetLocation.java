@@ -1,6 +1,6 @@
 public class TargetLocation extends Figures {
 
-	TargetLocation() {
-		super(null, '+');
+	TargetLocation(Position position) {
+		super(position, '.');
 	}
 }

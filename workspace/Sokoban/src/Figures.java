@@ -7,6 +7,10 @@ public abstract class Figures {
 		this.setPosition(position);
 		this.setSign(sign);
 	}
+	
+	public void move() {
+		
+	}
 
 	public char getSign() {
 		return sign;
