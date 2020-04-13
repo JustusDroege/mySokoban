@@ -1,5 +1,3 @@
-package main;
-
 public class Position {
 	
 	private int x;

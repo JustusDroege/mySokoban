@@ -1,7 +1,3 @@
-package figures;
-
-import main.*;
-
 public abstract class Figures {
 	
 	private char sign;
