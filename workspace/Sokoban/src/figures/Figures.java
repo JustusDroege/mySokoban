@@ -1,3 +1,6 @@
+package figures;
+
+import main.*;
 
 public abstract class Figures {
 	

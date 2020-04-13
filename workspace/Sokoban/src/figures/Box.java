@@ -1,6 +1,8 @@
+package figures;
+
 public class Box extends Figures {
 
-	Box() {
+	Box( ) {
 		super(null, '$');
 	}
 }
