@@ -2,7 +2,7 @@ import java.io.IOException;
 
 public class Level {
 	
-	//private Figures[][] level;
+	
 	private TileSetReader map;
 	private char[][] tiles;
 	private Figures[][] level;
@@ -10,10 +10,8 @@ public class Level {
 	public Level(String field) throws IOException  {
 		this.map = new TileSetReader(field);
 		this.tiles = map.getMapArray(field);
-		//this.level = level;
 		setFigures();
 	}
-	
 	
 	public void setFigures() {
 		
@@ -60,9 +58,28 @@ public class Level {
 	    }
 		
 	}
+	public Figures[][] getFigures() {
+		return level;
+	}
+	public Player getPlayer() {
+		Player player = null;
+		for(int i = 0; i < level.length; i++){
+			for(int j = 0; j< level[i].length; j++){
+				if(level[i][j].getSign() == '@'){
+					player = (Player) level[i][j];
+				}
+			}
+		}
+		return player;
+		
+	}
 	
+	public void drawLevel() {
+		
+		for (int i = 0; i<30; i++) {
+		       System.out.print('\n');
+		    }
 
-	public void drawLevelObjects() {
 		//Auf Basis der Figuren mit Koordinaten
 		for(int i = 0; i < tiles.length; i++){
 	    	for(int j = 0; j< tiles[i].length; j++){
@@ -74,7 +91,8 @@ public class Level {
 		}
 		
 	}
-
+	
+    /*
 	public void drawLevelTiles() {
 		//Auf Basis des Tilesets statisch!!!!!!!!!
 		for(int i = 0; i < tiles.length; i++){
@@ -86,4 +104,6 @@ public class Level {
 	    	}
 		}
 	}
+	
+	*/
 }

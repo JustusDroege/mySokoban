@@ -9,9 +9,9 @@ public class TileSetReader {
 	
 	
 	private char[][] map;
-	
 	@SuppressWarnings("unused")
 	private String field;
+	
 
 	public TileSetReader(String field) throws IOException {
 		this.field = field;
